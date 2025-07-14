@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Operadores de Comparación</title>
+        <title>Funciones String</title>
     </head>
     <body>
         <script>
@@ -29,6 +29,30 @@
             // Cambiar todas las letras de la cadena a Mayúsculas
             let palabraMayuscula = "Javascript".toUpperCase();
             document.write("La palabra en mayúsculas es: " + palabraMayuscula + "<br>");
+
+            // Cambiar todas las letras de la cadena a Minúsculas
+            let minusculas = palabra.toLowerCase();
+            document.write("La palabra en minusculas es: " + minusculas + "<br>");
+
+        // Unir texto
+        let palabra2 = "Curso de: ";
+        document.write("Unión de palabras: " + palabra2.concat(palabra) + "<br>");
+
+        // Acortar espacios entre textos
+        let palabra3 = "   Hola     ";
+        document.write(palabra3 + "<br>");
+
+        // Con trimStart se eliminan los espacios al inicio de la cadena
+        document.write(palabra3.trimStart() + "<br>");
+
+        // Con trimEnd se eliminan los espacios al final de la cadena
+        document.write(palabra3.trimEnd() + "<br>");
+
+        // Con trim se eliminan los espacios al inicio y al final de la cadena
+        document.write(palabra3.trim() + "<br>");
+
+        // Cortar cantidad de caracteres
+        document.write(palabra.split("Script") + "<br>");
         </script>
     </body>
 </html>
