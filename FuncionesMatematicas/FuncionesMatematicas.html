@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funciones Matematicas</title>
+    </head>
+    <body>
+        <script>
+            // Con la funcion Math. Podemos acceder a las funciones matematicas de JavaScript.
+
+            // Con la funcion .round redondea la variable al valor entero mas cercano.
+            var precio = Math.round(399.99);
+
+            document.write("Precio redondeado: " + precio + "<br>");
+
+            // La funcion .ceil redondea el valor al entero mas cercano hacia arriba.
+            var precio = Math.ceil(299.9);
+            document.write("Precio redondeado: " + precio + "<br>");
+
+            // La funcion .floor redondea el valor al entero mas cercano hacia abajo.
+            var precio = Math.floor(540.9);
+            document.write("Precio redondeado: " + precio + "<br>");
+
+            // La funcion .sin devuelve el seno de un ángulo en radianes.
+            var seno = Math.sin(45);
+            document.write("Seno de 45 grados: " + seno + "<br>");
+
+            // La funcion .exp devuelve el valor de e elevado a la potencia de un número.
+            var exponente = Math.exp(3);
+            document.write("Exponente de e^3: " + exponente + "<br>");
+
+            // La funcion .log devuelve el logaritmo natural de un número.  
+            var logaritmo = Math.log(10);
+            document.write("Logaritmo natural de 10: " + logaritmo + "<br>");
+
+            // La funcion .abs devuelve el valor absoluto de un número. 
+            var absoluto = Math.abs(-50);
+            document.write("Valor absoluto de -50: " + absoluto + "<br>");
+
+            // Calcular el valor maximo de una secuencia.
+            var maximo = Math.max(10, 50, 600, 1 , 8);
+            document.write("Valor máximo: " + maximo + "<br>");
+
+            // Calcular el valor minimo de una secuencia.
+            var minimo = Math.min(10, 50, 600, 1, 8);
+            document.write("Valor mínimo: " + minimo + "<br>");
+
+            // Generar un valor aleatorio
+            var random = Math.random();
+            document.write("valor aleatorio: " + random + "<br>");  
+
+            // Concatenación de funciones matemáticas
+            var randomRedondeado = Math.round(Math.random()*5);
+            document.write("Valor aleatorio redondeado: " + randomRedondeado + "<br>");
+
+            // Raiz cuadrada de un número 
+            var raiz = Math.sqrt(81);
+            document.write("Raíz cuadrada de 81: " + raiz + "<br>");
+
+            // Calcular el exponente de un numero
+            var potencia = Math.pow(2, 3); // 2 elevado a la 3
+            document.write("2 elevado a la 3: " + potencia + "<br>");
+        </script>
+    </body>
+</html>
